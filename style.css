@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+body {
+  background-color: rgb(201, 16, 87);
+
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  background: url("images/smallcolorpaw.webp") center;
+  background-size: contain;
+  height: 90%;
+  width: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start {
+  height: 50%;
+  border-radius: 10px;
+  background-color: blue;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 20x;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0 20px 10px;
+  color: white;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  border: 1px solid rgb(201, 16, 87);
+  padding: 1px 15px;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  margin-bottom: 5px;
+  background-color: rgb(201, 16, 87);
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(201, 16, 87);
+}
+
+button {
+  border: 1px solid rgb(201, 16, 87);
+  padding: 1px 15px;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  margin-bottom: 5px;
+  background-color: rgb(201, 16, 87);
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(201, 16, 87);
+}
+
+.header {
+  width: 60%;
+  border: 1px solid blue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: yellow;
+}
+
+.progress {
+  display: none;
+  text-align: center;
+  color: blue;
+}
+
+.progress li {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+img {
+  height: auto;
+  width: 80%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.corners {
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quiz {
+  background-color: blue;
+  display: none;
+  border: 1px blue;
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.submit-answer {
+  margin-top: 30px;
+}
+
+fieldset {
+  border: none;
+  padding-left: 20px;
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+}
+
+label,
+input {
+  cursor: pointer;
+}
+
+.response {
+  background-color: blue;
+  display: none;
+  border: 1px blue;
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  color: white;
+}
+
+.summary {
+  background-color: blue;
+  display: none;
+  border: 1px blue;
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+  color: white;
+}
+
+.summary p {
+  padding: 0 5px;
+}
+
+.response button {
+  margin-bottom: 13px;
+}
+
+/* Medium Phone */
+@media screen and (min-width: 375px) {
+  .response p {
+    padding: 0 5px;
+  }
+
+  .response {
+    height: 50%;
+  }
+
+  .summary {
+    height: 55%;
+  }
+
+  .summary p {
+    padding: 0 5px;
+  }
+}
+
+/* Large Phone */
+@media screen and (min-width: 425px) {
+  .summary {
+    height: 60%;
+  }
+  .summary p {
+    padding: 0 8px;
+  }
+
+  .response p {
+    padding: 0 8px;
+  }
+}
+/*   tablet */
+@media screen and (min-width: 600px) {
+  .response {
+    height: 50%;
+  }
+
+  .summary {
+    height: 70%;
+  }
+}
+
+/* computer    */
+@media screen and (min-width: 800px) {
+  .summary {
+    height: 90%;
+  }
+
+  .response {
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .response {
+    height: 80%;
+  }
+
+  .summary {
+    height: 100%;
+  }
+}
