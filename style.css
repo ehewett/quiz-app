@@ -197,6 +197,14 @@ input {
   .summary p {
     padding: 0 5px;
   }
+
+  fieldset {
+    font-size: 20px;
+  }
+
+  legend {
+    font-size: 20px;
+  }
 }
 
 /* Large Phone */
@@ -234,6 +242,7 @@ input {
   }
 }
 
+/*laptop */
 @media screen and (min-width: 1024px) {
   .response {
     height: 80%;
