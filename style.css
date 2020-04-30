@@ -20,8 +20,9 @@ body {
 .container {
   background: url("images/smallcolorpaw.webp") center;
   background-size: contain;
-  height: 90%;
-  width: 70%;
+  width: 90%;
+  max-width: 700px;
+  min-height: 90vh;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -29,11 +30,21 @@ body {
   flex-direction: column;
 }
 
-.start {
-  height: 50%;
+.start,
+.quiz,
+.response,
+.summary {
+  min-height: 250px;
+  padding: 10px;
   border-radius: 10px;
   background-color: blue;
   width: 80%;
+  display: none;
+  color: white;
+}
+
+.start {
+  display: block;
 }
 
 h1 {
@@ -111,7 +122,6 @@ button:hover {
 }
 
 img {
-  height: auto;
   width: 80%;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -124,15 +134,6 @@ img {
 legend {
   font-weight: bold;
   font-size: 18px;
-}
-
-.quiz {
-  background-color: blue;
-  display: none;
-  border: 1px blue;
-  width: 80%;
-  height: 50%;
-  border-radius: 10px;
 }
 
 .submit-answer {
@@ -152,103 +153,10 @@ input {
   cursor: pointer;
 }
 
-.response {
-  background-color: blue;
-  display: none;
-  border: 1px blue;
-  width: 80%;
-  height: 40%;
-  border-radius: 10px;
-  color: white;
-}
-
-.summary {
-  background-color: blue;
-  display: none;
-  border: 1px blue;
-  width: 80%;
-  height: 50%;
-  border-radius: 10px;
-  color: white;
-}
-
 .summary p {
   padding: 0 5px;
 }
 
 .response button {
   margin-bottom: 13px;
-}
-
-/* Medium Phone */
-@media screen and (min-width: 375px) {
-  .response p {
-    padding: 0 5px;
-  }
-
-  .response {
-    height: 50%;
-  }
-
-  .summary {
-    height: 55%;
-  }
-
-  .summary p {
-    padding: 0 5px;
-  }
-
-  fieldset {
-    font-size: 20px;
-  }
-
-  legend {
-    font-size: 20px;
-  }
-}
-
-/* Large Phone */
-@media screen and (min-width: 425px) {
-  .summary {
-    height: 60%;
-  }
-  .summary p {
-    padding: 0 8px;
-  }
-
-  .response p {
-    padding: 0 8px;
-  }
-}
-/*   tablet */
-@media screen and (min-width: 600px) {
-  .response {
-    height: 50%;
-  }
-
-  .summary {
-    height: 70%;
-  }
-}
-
-/* computer    */
-@media screen and (min-width: 800px) {
-  .summary {
-    height: 90%;
-  }
-
-  .response {
-    height: 70%;
-  }
-}
-
-/*laptop */
-@media screen and (min-width: 1024px) {
-  .response {
-    height: 80%;
-  }
-
-  .summary {
-    height: 100%;
-  }
 }
